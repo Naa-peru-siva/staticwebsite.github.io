@@ -33,7 +33,7 @@
 header {
             text-align: center;
             border: solid transparent;
-            font-size: 34px;
+            font-size: 300%;
             font-family: 'Rubik Doodle Shadow', system-ui;
             font-weight: bold;
             border: 8px ridge #4d3919;
@@ -51,27 +51,28 @@ header {
         }
         
 .tools {
-            margin-right: 6%;
+            margin-right: 10%;
             color: #4d3319;
             cursor: pointer;
         }
         
 #searchInput {
-            width: 80%;
-            font-size: 12px;  
+            width: 100%;
+            font-size: 18px;  
             cursor: pointer; 
         }
         
 #menu-slide {
-                width: 140px;
-                height: 247px;
+                width: 19%;
+                height: 50%;
                 background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjooinn.com%2Fimages%2Fwood-background-55.jpg&f=1&nofb=1&ipt=79a42b85afed7370cc3451a670d5cc4ba04cd4a719fb65f2752dc0cf34d6f521&ipo=images');
                background-size: contain;
                position: absolute;
                border: 6px ridge #4d3919;
                z-index: 999;
-               top: -254px;
-               left: 12px;
+               top: -60%;
+               left: 2%;
+		   font-size: 150%;
             }
             
             @keyframes down{
@@ -203,16 +204,20 @@ hr {
       <p class="text-texture">Classic Tunes</p>      
      </header>
      
-     <ul class="mobile-toolbar" >
+     <ul class="mobile-toolbar">
     <li class="tools">
-            <svg id="menu-button" onclick="menuDown()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/> </svg>      
+            <svg id="menu-button" onclick="menuDown()" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/> </svg>      
      </li>
      <li class="tools">
-             <input id="searchInput" style="background-color: transparent;border: 3px ridge #4d3919;"type="text"  oninput="searchCaptions()" placeholder="search files">
-             <label style="color: #4d3919;"for="searchInput"> 
-            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="13" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/> 
-            </svg>
-              </label>       
+		<span style="display: flex;">
+			<span style="margin-right: 6%;">
+             		<input id="searchInput" style="background-color: transparent;border: 3px ridge #4d3919;"type="text"  oninput="searchCaptions()" placeholder="search files">
+             		<label style="color: #4d3919;"for="searchInput">
+			</span> 
+            	<svg  xmlns="http://www.w3.org/2000/svg" width="33" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/> 
+            	</svg>
+              	</label>
+		</span>       
      </li>         
 </ul>
 
