@@ -25,8 +25,8 @@
   }
   
  .background-image{
-          background-image:         url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjooinn.com%2Fimages%2Fwood-background-55.jpg&f=1&nofb=1&ipt=79a42b85afed7370cc3451a670d5cc4ba04cd4a719fb65f2752dc0cf34d6f521&ipo=images");
-          background-size: contain;
+          background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjooinn.com%2Fimages%2Fwood-background-55.jpg&f=1&nofb=1&ipt=79a42b85afed7370cc3451a670d5cc4ba04cd4a719fb65f2752dc0cf34d6f521&ipo=images");
+          background-size: cover;
           background-repeat: repeat; 
           }
 
@@ -131,7 +131,7 @@ header {
 figure {    cursor: pointer;
             text-align: center;
             font-weight: bold;
-            margin: 10px 0px;
+            margin: 3% 3%;
             padding: 0;
         }
         
@@ -151,9 +151,9 @@ figcaption {
           }
           
 button {    cursor: pointer;
-            border: 3px ridge #4d3919;
+            border: 6px ridge #4d3919;
             background-color: transparent;
-            font-size: 12px;
+            font-size: 150%;
             color: #4d3919;
             box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
         }
@@ -421,12 +421,8 @@ hr {
             </a>
          </div> 
      </figure>
-     </div><!-- /flex -->
-     </div><!-- /page1 -->
 
-<div id="page2" class="page">
-    <div class="flexible shuffle-container">
-       <figure class="shuffle">
+     <figure class="shuffle">
         <div onclick="toggleBlock('toggleBlock11')">
             <figure>
                 <img  src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/ce/4c/46ce4c81-59d8-eae6-18ac-c10746aed240/8901854097036.png/592x592bb.webp" alt="album cover">
@@ -444,7 +440,7 @@ hr {
             </a>
         </div>
     </figure>
-   
+
     <figure class="shuffle">
         <div onclick="toggleBlock('toggleBlock12')">
             <figure>
@@ -520,6 +516,11 @@ hr {
             </a>
          </div> 
      </figure>
+     </div><!-- /flex -->
+     </div><!-- /page1 -->
+
+<div id="page2" class="page">
+    <div class="flexible shuffle-container">
      
      <figure class="shuffle">
         <div onclick="toggleBlock('toggleBlock16')">
@@ -615,12 +616,8 @@ hr {
             </a>
          </div> 
      </figure>
-    </div>
-</div>
 
-<div id="page3" class="page">
-    <div class="flexible shuffle-container">
-        <figure class="shuffle">
+     <figure class="shuffle">
         <div onclick="toggleBlock('toggleBlock21')">
             <figure>
                 <img  src="https://tse1.mm.bing.net/th?id=OIP.gjjnNtkl6MUYBfU9ZYcldAHaHa&pid=Api&H=160&W=160" alt="album cover">
@@ -714,6 +711,7 @@ hr {
             </a>
          </div> 
      </figure>
+
      
      <figure class="shuffle">
         <div onclick="toggleBlock('toggleBlock26')">
@@ -812,26 +810,31 @@ hr {
     </div>
 </div>
 
+<div id="page3" class="page">
+    <div class="flexible shuffle-container"></div>
+    <p style="margin:5% 5%;text-align:center;justify-content: center;font-size: 150%;" >No More Content...</p>
+</div>
+
 </div><!-- /gallery -->
 
-<div align="center">
-<button onclick="prevPage()">Prev</button>
+<div align="center" style="margin-top: 4%;">
+<button style="margin-right: 5%;" onclick="prevPage()">Prev</button>
 <button onclick="nextPage()">Next</button>
 </div>
 
-<div>
-    <h2 class="text-texture">Recent</h2><hr>
-    <ul>
-        <li><strong><a class="text-texture" href="https://youtu.be/Z1QuBXVrUHU?si=PfwMx8N9P6AjTXXF">Sound of Salaar</a></strong></li>
-        <br>
-        <li><strong><a class="text-texture" href="https://youtu.be/QmtxR3oIn78?si=kfcpNcNO9LNWDVjo">Wrath of Salaar</a></strong></li>
-    </ul>
+    <div style="font-size: 150%;margin-top: 5%;margin-left: 3%;">
+        <h2 class="text-texture">Recent</h2><hr>
+        <ul>
+            <li><strong><a class="text-texture" href="https://youtu.be/Z1QuBXVrUHU?si=PfwMx8N9P6AjTXXF">Sound of Salaar</a></strong></li>
+            <br>
+            <li><strong><a class="text-texture" href="https://youtu.be/QmtxR3oIn78?si=kfcpNcNO9LNWDVjo">Wrath of Salaar</a></strong></li>
+        </ul>
     </div>
     
 </div><!-- /home -->
 
 <!-- About section -->  
- <div id="element2" class="element"class="flexible">
+ <div id="element2" class="element"class="flexible" style="font-size: 140%;margin: 3% 3%;">
         <h2 class="text-texture"><u>About Classic Tunes</u></h2>
         <p>Welcome to Classic Tunes, your gateway to the world of timeless melodies!</p>
         
@@ -851,14 +854,14 @@ hr {
 </div>
 
 <!-- contact section -->
-<div id="element3" class="element"class="flexible">
+<div id="element3" class="element"class="flexible" style="font-size: 140%;margin: 3% 3%;">
         <h2 class="text-texture"><u>Contact Us</u></h2>
         <p>For any inquiries or feedback, feel free to reach out to us via email:</p>
        
         <ul>
-            <li>Email: <a href="mailto:info@classictunes.com">info@classictunes.com</a></li>
-            <li>Customer Support: <a href="mailto:support@classictunes.com">support@classictunes.com</a></li>
-            <li>General Inquiries: <a href="mailto: sivasankarkalthireddy1@gmail.com">sivasankarkalthireddy1@gmail.com</a></li>
+            <li>Email: <a style="color: #4d3919;" href="mailto:info@classictunes.com">info@classictunes.com</a></li>
+            <li>Customer Support: <a style="color: #4d3919;" href="mailto:support@classictunes.com">support@classictunes.com</a></li>
+            <li>General Inquiries: <a style="color: #4d3919;" href="mailto: sivasankarkalthireddy1@gmail.com">sivasankarkalthireddy1@gmail.com</a></li>
         </ul>
         
         <p>We appreciate your interest and look forward to hearing from you!</p>   
